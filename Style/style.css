@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+:root {
+    --theme-clr: #E6533C;
+    --text-dark: rgba(255, 255, 255, 0.5);
+    --white: #FFFFFF;
+    --max-width: 1152px;
+}
+
+
+body{
+    background-color: rgba(17, 17, 17, 1);
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Shared Styles Start Here */
+
+.section__container{
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.section__header{
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: var(--white);
+}
+
+.text__p{
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+.card__header{
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.btn {
+    color: var(--white);
+    font-size: 1.2rem;
+    border-radius: 2.8rem;
+    border: none;
+    margin-top: 2rem;
+    margin-right: .5rem;
+}
+
+.btn__primary {
+    padding: 1rem 2.6rem;
+    background-color: var(--theme-clr);
+    font-family: "Inter", sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+/* header style  */
+
+nav {
+    max-width: var(--max-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__header h2{
+    font-size: 2.1rem;
+    font-weight: 800;
+    font-style: italic;
+    color: var(--theme-clr);
+}
+
+.nav__links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .25rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2.5rem;
+}
+
+.nav__links li {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--white);
+    padding: .6rem 1.3rem;
+    border-radius: 3rem;
+}
+
+#home{
+    background-color: var(--theme-clr);
+}
+
+
+/* banner style */
+
+.banner__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.banner__content{
+    max-width: 520px;
+}
+
+.banner__header{
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 1.6rem;
+}
+
+
+
+#download-btn{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.banner__image{
+    position: relative;
+    
+}
+
+.banner__image__card{
+    position: absolute;
+    padding: 1.2rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 1rem;
+}
+
+.banner__image__card1{
+    display: flex;
+    gap: .3rem;
+    bottom: 18%;
+    left: -30%;
+}
+
+.banner__image__card2{
+    top: 22%;
+    right: -20%;
+}
+
+
