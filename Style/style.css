@@ -6,16 +6,17 @@
     --text-dark: rgba(255, 255, 255, 0.5);
     --white: #FFFFFF;
     --max-width: 1152px;
+    --bg-clr: #222222;
 }
 
 
-body{
+body {
     background-color: rgba(17, 17, 17, 1);
     color: white;
     font-family: "Inter", sans-serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,28 +25,34 @@ body{
 
 /* Shared Styles Start Here */
 
-.section__container{
+.section__container {
     max-width: var(--max-width);
-    margin: 0 auto ;
+    margin: 0 auto;
 }
 
-.section__header{
+.section__bg {
+    background-color: var(--bg-clr);
+    border-radius: 1rem;
+}
+
+.section__header {
     font-size: 3.2rem;
     font-weight: 900;
     color: var(--white);
     margin-bottom: 1rem;
 }
 
-.text__p{
+.text__p {
     font-size: 1rem;
     color: var(--text-dark);
 }
 
-.card__header{
+.card__header {
     color: var(--white);
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
+
 
 .btn {
     color: var(--white);
@@ -64,7 +71,7 @@ body{
     font-size: 1.1rem;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
@@ -72,7 +79,7 @@ ul{
 
 /* header style  */
 
-header{
+header {
     background: linear-gradient(to bottom, #111111fe, #77777735, #111111fe);
 }
 
@@ -83,18 +90,18 @@ nav {
     align-items: center;
 }
 
-.nav__container{
+.nav__container {
     padding-top: 3.5rem;
 }
 
-.nav__header h2{
+.nav__header h2 {
     font-size: 2.1rem;
     font-weight: 800;
     font-style: italic;
     color: var(--theme-clr);
 }
 
-.nav__links{
+.nav__links {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,55 +118,55 @@ nav {
     border-radius: 3rem;
 }
 
-#home{
+#home {
     background-color: var(--theme-clr);
 }
 
-#hamburg__icon{
+#hamburg__icon {
     display: none;
 }
 
 
 /* banner style */
 
-.banner__container{
+.banner__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
 
-.banner__content{
+.banner__content {
     max-width: 520px;
 }
 
 
 
-.banner__header{
+.banner__header {
     font-size: 5rem;
     font-weight: 900;
     margin-bottom: 1.6rem;
 }
 
 
-#join-btn::before{
+#join-btn::before {
     content: "Join Club Now!";
 }
 
-#download-btn{
+#download-btn {
     background-color: transparent;
-    border: 3px solid white;
+    border: 2px solid white;
 }
 
 
 
 
-.banner__image{
+.banner__image {
     position: relative;
-    
+
 }
 
-.banner__image__card{
+.banner__image__card {
     position: absolute;
     padding: 1.2rem 1.5rem;
     background-color: rgba(255, 255, 255, 0.1);
@@ -167,41 +174,45 @@ nav {
     border-radius: 1rem;
 }
 
-.banner__image__card1{
+.banner__image__card1 {
     display: flex;
     gap: .3rem;
     bottom: 18%;
     left: -30%;
 }
-.banner__image__card1 h3{
+
+.banner__image__card1 h3 {
     font-size: 1.5rem;
     font-weight: 900;
 }
 
-.banner__image__card2{
+.banner__image__card2 {
     top: 22%;
     right: -12%;
 }
 
-.banner__image__card2 h3{
+.banner__image__card2 h3 {
     font-size: 2rem;
     font-weight: 900;
 }
 
-/* Habit section Style */ /* Habit section Style */
+/* Habit section Style */
+/* Habit section Style */
 
-.habit__content{
+.habit__content {
+    max-width: 50vw;
     text-align: center;
-    margin: 5rem 0 3rem;
+    margin: 5rem auto 3rem;
+    
 }
 
-.habit__card__container{
+.habit__card__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
 }
 
-.habit__card{
+.habit__card {
     max-width: 231px;
     display: flex;
     flex-direction: column;
@@ -210,115 +221,201 @@ nav {
     justify-content: center;
 }
 
-.habit__card img{
+.habit__card img {
     border-radius: 50%;
     margin-bottom: 1rem;
 }
 
+/* Run Section Style Run Section Style Run Section Style */
 
+.run__container {
+    display: flex;
+    margin-top: 5rem;
+    padding: 4rem;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.run__content {
+    max-width: 30vw;
+}
 
-@media screen and (max-width:576px){
-    .section__container{
+.run__card__container {
+    width: 366px;
+    height: 312px;
+}
+
+.run__image {
+    width: 100%;
+    height: 100%;
+    background: url(../images/run-bg.jpg);
+    background-position: 68% 30%;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    border-radius: 1.3rem;
+}
+
+@media screen and (max-width:576px) {
+    .section__container {
         max-width: 90vw;
     }
 
-    .section__header{
+    .section__header {
         font-size: 2rem;
     }
 
     /* Header Responsive */
-    
-    .banner__container{
+
+    .banner__container {
         flex-direction: column;
     }
 
-    .nav__links li{
+    .nav__links li {
         display: none;
     }
 
-    .nav__links #hamburg__icon{
+    .nav__links #hamburg__icon {
         display: block;
         font-size: 1.5rem;
     }
 
-    .banner__content{
+    .banner__content {
         align-self: flex-start;
     }
 
-    .banner__content__text{
+    .banner__content__text {
         max-width: 65vw;
     }
-    
-    .banner__header{
+
+    .banner__header {
         margin-top: 3rem;
         font-size: 2.1rem;
-        
+
     }
-    
-    .banner__btn{
+
+    .banner__btn {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: space-between;
     }
 
-    #join-btn::before{
+    #join-btn::before {
         content: "Join Now!";
     }
 
-    #download-btn{
-        padding: 1rem ;
+    #download-btn {
+        padding: 1rem;
     }
 
-    .banner__image__card1{
+    .banner__image__card1 {
         left: 0;
         bottom: 48%;
     }
-    .banner__image__card1 p{
+
+    .banner__image__card1 p {
         font-size: 0.8rem;
     }
-    .banner__image__card1 img{
+
+    .banner__image__card1 img {
         max-width: 30px;
         height: 30px;
     }
 
-    .banner__image__card2{
+    .banner__image__card2 {
         right: 0;
         top: 10%;
     }
-    .banner__image__card2 p{
+
+    .banner__image__card2 p {
         font-size: 0.65rem;
     }
 
     /* habit responsive small */
-    .habit__card__container{
+
+    .habit__content{
+        max-width: 90vw;
+    }
+    
+    .habit__card__container {
         grid-template-columns: 1fr;
         gap: 2.5rem;
     }
+
+    /* Run Section Responsive */
+
+    .run__container {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    .run__content {
+        max-width: 90vw;
+        margin-bottom: 1.5rem;
+    }
+
+    .run__content .btn {
+        width: 100%;
+    }
+
+    .run__card__container {
+        width: 287px;
+        height: 170px;
+        align-self: center;
+    }
+
+    .run__image {
+        background-size: 200%;
+    }
+
 }
 
 
 
 
 @media screen and (min-width:577px) and (max-width: 992px) {
-    .section__container{
+    .section__container {
         max-width: 90vw;
     }
 
     /* header responsive */
-    
-    .banner__container{
+
+    .banner__container {
         flex-direction: column;
         margin-top: 4rem;
     }
 
-    .banner__content{
+    .banner__content {
         align-self: flex-start;
     }
 
-        /* habit responsive small */
-        .habit__card__container{
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2.5rem;
-        }
+    /* habit responsive Medium */
+
+    .habit__content{
+        max-width: 70vw;
+    }
+    
+    .habit__card__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+    /* run Section responsive Midium */
+
+    .run__container{
+        padding: 2rem;
+    }
+    
+    .run__content{
+        max-width: 40vw;
+    }
+    
+    .run__card__container {
+        width: 256px;
+        height: 319px;
+    }
+
+    .run__image {
+        background-size: 350%;
+    }
+
 }
