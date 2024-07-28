@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="./Style/style.css" />
   </head>
   <body>
     <header>
-      <nav class="section__container">
+      <nav class="section__container nav__container">
         <div class="nav__header">
           <h2>Fitness</h2>
         </div>
@@ -17,19 +18,24 @@
           <li id="service">Service</li>
           <li id="contact">Contact</li>
           <li id="about">About</li>
+          <li id="hamburg__icon"><i class="ri-menu-2-line"></i></li>
         </ul>
       </nav>
 
       <div class="section__container banner__container">
         <div class="banner__content">
-          <h1 class="banner__header">Get body in shape & stay healthy</h1>
-          <p class="text__p banner__subheader">
-            A huge selection of health and fitness content, healthy recipes and
-            transformation stories to help you get fit and stay fit!
-          </p>
+          <div class="banner__content__text">
+            <h1 class="banner__header">Get body in shape & stay healthy</h1>
+            <p class="text__p banner__subheader">
+              A huge selection of health and fitness content, healthy recipes and
+              transformation stories to help you get fit and stay fit!
+            </p>
+          </div>
           <div class="banner__btn">
-            <button class="btn btn__primary">Join Club Now!</button>
-            <button class="btn btn__primary" id="download-btn">Download App</button>
+            <button class="btn btn__primary" id="join-btn"></button>
+            <button class="btn btn__primary" id="download-btn">
+              Download App
+            </button>
           </div>
         </div>
         <div class="banner__image">
@@ -46,7 +52,7 @@
               <p class="text__p">Free Workout Videos</p>
             </div>
           </div>
-          <img src="./images/banner-image.png" alt="">
+          <img src="./images/banner-image.png" alt="" />
         </div>
       </div>
     </header>

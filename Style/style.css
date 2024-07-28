@@ -26,7 +26,7 @@ body{
 
 .section__container{
     max-width: var(--max-width);
-    margin: 0 auto;
+    margin: 0 auto ;
 }
 
 .section__header{
@@ -52,12 +52,14 @@ body{
     border: none;
     margin-top: 2rem;
     margin-right: .5rem;
+    white-space: nowrap;
 }
 
 .btn__primary {
     padding: 1rem 2.6rem;
     background-color: var(--theme-clr);
     font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
 }
 
 ul{
@@ -68,11 +70,19 @@ ul{
 
 /* header style  */
 
+header{
+    background: linear-gradient(to bottom, #111111fe, #77777735, #111111fe);
+}
+
 nav {
     max-width: var(--max-width);
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav__container{
+    padding-top: 3.5rem;
 }
 
 .nav__header h2{
@@ -103,6 +113,10 @@ nav {
     background-color: var(--theme-clr);
 }
 
+#hamburg__icon{
+    display: none;
+}
+
 
 /* banner style */
 
@@ -117,6 +131,8 @@ nav {
     max-width: 520px;
 }
 
+
+
 .banner__header{
     font-size: 5rem;
     font-weight: 900;
@@ -124,11 +140,17 @@ nav {
 }
 
 
+#join-btn::before{
+    content: "Join Club Now!";
+}
 
 #download-btn{
     background-color: transparent;
     border: 1px solid white;
 }
+
+
+
 
 .banner__image{
     position: relative;
@@ -149,10 +171,108 @@ nav {
     bottom: 18%;
     left: -30%;
 }
+.banner__image__card1 h3{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
 
 .banner__image__card2{
     top: 22%;
-    right: -20%;
+    right: -12%;
+}
+
+.banner__image__card2 h3{
+    font-size: 2rem;
+    font-weight: 900;
 }
 
 
+
+@media screen and (max-width:576px){
+    .section__container{
+        max-width: 90vw;
+    }
+
+    /* Header Responsive */
+    
+    .banner__container{
+        flex-direction: column;
+    }
+
+    .nav__links li{
+        display: none;
+    }
+
+    .nav__links #hamburg__icon{
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    .banner__content{
+        align-self: flex-start;
+    }
+
+    .banner__content__text{
+        max-width: 65vw;
+    }
+    
+    .banner__header{
+        margin-top: 3rem;
+        font-size: 2.1rem;
+        
+    }
+    
+    .banner__btn{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+    }
+
+    #join-btn::before{
+        content: "Join Now!";
+    }
+
+    #download-btn{
+        padding: 1rem ;
+    }
+
+    .banner__image__card1{
+        left: 0;
+        bottom: 48%;
+    }
+    .banner__image__card1 p{
+        font-size: 0.8rem;
+    }
+    .banner__image__card1 img{
+        max-width: 30px;
+        height: 30px;
+    }
+
+    .banner__image__card2{
+        right: 0;
+        top: 10%;
+    }
+    .banner__image__card2 p{
+        font-size: 0.65rem;
+    }
+}
+
+
+
+
+@media screen and (min-width:577px) and (max-width: 992px) {
+    .section__container{
+        max-width: 90vw;
+    }
+
+    /* header responsive */
+    
+    .banner__container{
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+
+    .banner__content{
+        align-self: flex-start;
+    }
+}
