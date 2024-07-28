@@ -405,6 +405,16 @@ nav {
         background-size: 200%;
     }
 
+    /* Team section Responsive small Device */
+
+    .team__card__container{
+        grid-template-columns: 1fr;
+    }
+
+    .hide__on__small{
+        display: none;
+    }
+
 }
 
 
