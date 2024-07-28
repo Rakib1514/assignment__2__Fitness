@@ -230,7 +230,7 @@ nav {
 
 .run__container {
     display: flex;
-    margin-top: 5rem;
+    margin-top: 8rem;
     padding: 4rem;
     justify-content: space-between;
     align-items: center;
@@ -254,6 +254,44 @@ nav {
     /* background-size: cover; */
     border-radius: 1.3rem;
 }
+
+/* Team Section */
+
+.team__container{
+    margin-top: 8rem;
+}
+
+.team__content{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.team__card__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.3rem;
+    gap: 1.5rem;
+}
+
+.team__card{
+    position: relative;
+    
+}
+
+.team__card img{
+    width: 100%;
+    border-radius: 1rem;
+    opacity: 0.75;
+}
+
+.team__card .card__content{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+
+
 
 @media screen and (max-width:576px) {
     .section__container {
