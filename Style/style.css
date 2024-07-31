@@ -388,7 +388,7 @@ footer{
 
     .banner__image__card1 {
         left: 0;
-        bottom: 48%;
+        bottom: 10%;
     }
 
     .banner__image__card1 p {
@@ -402,7 +402,7 @@ footer{
 
     .banner__image__card2 {
         right: 0;
-        top: 10%;
+        top: 20%;
     }
 
     .banner__image__card2 p {
