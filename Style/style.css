@@ -7,6 +7,7 @@
     --white: #FFFFFF;
     --max-width: 1152px;
     --bg-clr: #222222;
+    --input-bg:rgba(255, 255, 255, 0.1);
 }
 
 
@@ -43,7 +44,7 @@ body {
 }
 
 .section__subheader{
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     font-weight: 700;
 
 }
@@ -259,6 +260,52 @@ header .nav__container {
     border-radius: 1.3rem;
 }
 
+/* BMI Calculator Section */
+
+.bmi__content{
+    margin-top: 7rem;
+    text-align: center;
+}
+
+.bmicalculator__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4rem 0;
+    gap: 5rem;
+}
+
+.bmi__calculator{
+    grid-column: span 2;
+}
+
+table{
+    margin-top: 3rem;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 10px 20px 15px 10px;
+    text-align: start;
+    border: 1px solid var(--text-dark);
+}
+
+form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.7rem;
+}
+
+.expend__input{
+    grid-column: span 2;
+}
+
+form input{
+    padding: 1rem 1.3rem;
+    background-color: var(--input-bg);
+    border: none;
+    border-radius: 0.5rem;
+}
+
 /* Team Section */
 
 .team__container {
@@ -388,7 +435,7 @@ footer{
 
     .banner__image__card1 {
         left: 0;
-        bottom: 10%;
+        bottom: 48%;
     }
 
     .banner__image__card1 p {
@@ -402,7 +449,7 @@ footer{
 
     .banner__image__card2 {
         right: 0;
-        top: 20%;
+        top: 10%;
     }
 
     .banner__image__card2 p {
