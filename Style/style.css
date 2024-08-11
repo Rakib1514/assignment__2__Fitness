@@ -363,6 +363,7 @@ footer{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 120px;
+    border-bottom: 1px solid var(--input-bg);
 }
 
 .footer__content{
@@ -372,8 +373,10 @@ footer{
 .footer__content h2{
     margin-bottom: 1.2rem;
     font-size: 4.5rem;
+    font-style: italic;
     font-weight: 800;
     color: var(--theme-clr);
+
 }
 
 .footer__nav h3{
@@ -388,6 +391,12 @@ footer{
     margin-bottom: 1.3rem;
 }
 
+.copyright{
+    text-align: center;
+    padding: 1rem;
+    
+}
+
 
 
 @media screen and (max-width:576px) {
@@ -399,7 +408,12 @@ footer{
         font-size: 2rem;
     }
 
+
     /* Header Responsive */
+
+    header .nav__container{
+        max-width: 90vw;
+    }
 
     .banner__container {
         flex-direction: column;
