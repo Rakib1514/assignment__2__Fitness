@@ -76,6 +76,7 @@ body {
     margin-top: 2rem;
     margin-right: .5rem;
     white-space: nowrap;
+    transition: all 0.4s;
 }
 
 .btn__primary {
@@ -83,6 +84,10 @@ body {
     background-color: var(--theme-clr);
     font-family: "Inter", sans-serif;
     font-size: 1.1rem;
+}
+
+.btn:hover{
+    transform: translatey(-0.5rem);
 }
 
 ul {
