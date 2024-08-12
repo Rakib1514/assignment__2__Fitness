@@ -388,7 +388,7 @@ form input {
 
 .packagecard__container .primary__packcard {
     grid-row: span 2;
-    background-color: #E6533C;
+    background-color: var(--theme-clr);
 }
 
 .package__card {
@@ -513,6 +513,10 @@ footer {
 
 
     /* Header Responsive */
+
+    .great-vibes {
+        font-size: 3rem;
+      }
 
     header .nav__container {
         max-width: 90vw;
