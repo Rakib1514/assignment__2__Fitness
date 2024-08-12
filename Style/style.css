@@ -320,11 +320,16 @@ form {
     grid-column: span 2;
 }
 
-form input {
+form input, select {
     padding: 1rem 1.3rem;
     background-color: var(--input-bg);
     border: none;
     border-radius: 0.5rem;
+    color: var(--text-dark);
+}
+
+::placeholder{
+    color: var(--text-dark);
 }
 
 /* Team Section */
