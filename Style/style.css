@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 
 :root {
@@ -25,6 +26,11 @@ body {
 
 
 /* Shared Styles Start Here */
+
+.great-vibes {
+    font-family: "Great Vibes", cursive;
+    font-size: 7rem;
+  }
 
 .section__container {
     max-width: var(--max-width);
@@ -710,6 +716,14 @@ footer {
     .bmicalculator__container {
         grid-template-columns: 1fr;
     }
+
+    /* package Section */
+
+    .packagecard__container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
 
     /* Footer Section */
 
